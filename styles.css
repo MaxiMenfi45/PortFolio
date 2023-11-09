@@ -1,0 +1,187 @@
+:root{
+    --color-primario:#222;
+    --color-letras:whitesmoke;
+    --rojo:rgb(211, 22, 22);
+}
+
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--color-letras);
+    overflow-x: hidden;
+}
+
+#presentacion{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario);
+    text-align: center;
+    
+
+}
+#presentacion header h1{
+    font-size: 3rem;
+    
+}
+#presentacion header p{
+    font-size: 1.7rem;
+    color: var(--rojo);
+    font-weight: 100;
+}
+
+
+
+
+
+#nav-bar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: var(--rojo);
+    
+}
+#nav-bar ul{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-y: hidden;
+}
+#nav-bar ul li{
+    padding: 0 0.3rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: right;
+    list-style: none;
+    
+    
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    
+}
+
+#proyectos{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 19, 37, 0.7);
+    margin:auto;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: 100px 300px 30px;
+    grid-template-areas: 
+    "header header header "
+    "pagina1 pagina2 pagina3 "
+    ". boton  ."
+    ;
+    overflow-y:hidden ;
+}
+
+  
+
+
+#proyectos header{
+    margin-top: 20px;
+    border: 1px solid red;
+    text-align: center;
+    grid-area: header;
+    align-self: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+   
+#proyectos button{
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: var(--color-primario);
+}
+
+
+.negrita{
+    font-weight: bold;
+}
+
+#proyectos div{
+    border: 1px solid red;
+    overflow-y: hidden;
+    text-align: center;
+}
+#proyectos div .paginas1{
+    grid-area: pagina1;
+}
+
+#proyectos div .paginas2{
+    grid-area: pagina2;
+}
+#proyectos div .paginas3{
+    grid-area: pagina3;
+}
+
+#proyectos .boton-mostrar{
+    grid-area: boton;
+
+}
+
+#trabajar-juntos{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-primario);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#trabajar-juntos header{
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+#trabajar-juntos p{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#trabajar-juntos ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+#trabajar-juntos ul li{
+    margin: 0 20px;
+    list-style: none;
+    font-size: 20px;
+
+}
+hr{
+    width: 100%;
+    height: 10px;
+    background-color: var(--rojo);
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: var(--color-primario);
+}
