@@ -2,6 +2,7 @@
     --color-primario:#222;
     --color-letras:whitesmoke;
     --rojo:rgb(211, 22, 22);
+    
 }
 
 
@@ -14,6 +15,10 @@
     font-weight: 700;
     color: var(--color-letras);
     overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
 }
 
 #presentacion{
@@ -49,6 +54,7 @@
     align-items: center;
     position: fixed;
     background-color: var(--rojo);
+    z-index: 1;
     
 }
 #nav-bar ul{
@@ -76,7 +82,7 @@
 #proyectos{
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background-color: rgba(0, 19, 37, 0.7);
     margin:auto;
     gap: 20px;
@@ -96,13 +102,13 @@
 
 #proyectos header{
     margin-top: 20px;
-    border: 1px solid red;
     text-align: center;
     grid-area: header;
     align-self: center;
     font-size: 1.8rem;
     text-decoration: underline;
 }
+
    
 #proyectos button{
     width: 120px;
@@ -117,9 +123,9 @@
 }
 
 #proyectos div{
-    border: 1px solid red;
     overflow-y: hidden;
     text-align: center;
+    border: 2px solid black;
 }
 #proyectos div .paginas1{
     grid-area: pagina1;
@@ -149,10 +155,12 @@
 #trabajar-juntos header{
     margin-bottom: 10px;
     font-size: 3rem;
+    padding: 2px;
 }
 #trabajar-juntos p{
     font-size: 1.1rem;
     margin-bottom: 30px;
+    padding: 2px;
 }
 
 #trabajar-juntos ul{
@@ -185,3 +193,55 @@ footer{
     width: 100%;
     background-color: var(--color-primario);
 }
+.formato-pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.formato-pagina img{
+
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+}
+.formato-pagina p{
+    
+    height: 20%;
+    width: 100%;
+    background-color: var(--color-primario);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-letras);
+   position: relative;
+
+
+}
+.oculto{
+    position: absolute;
+    top: 200px;
+    background-color: var(--color-primario);
+    z-index: 2;
+    width: 250px;
+    height: 110px;
+    left: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    background-color: var(--color-primario 0.3);
+    background-color: blue;
+    z-index: 1;
+    
+}
+
+
+.formato-pagina:hover .oculto {
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+ }
+
+
