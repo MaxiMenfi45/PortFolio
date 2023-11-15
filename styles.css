@@ -284,7 +284,9 @@ footer{
 
         }
         #nav-bar ul li {
-            font-size: 20px;
+            font-size: 18px;
+            padding: 2px;
+
         }
 
 
