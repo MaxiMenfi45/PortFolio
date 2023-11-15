@@ -22,6 +22,11 @@
 a{
     text-decoration: none;
 }
+#hr{
+    background-color: var(--color-primario);
+    border: none;
+    height: 50px;
+}
 
 #presentacion{
     display: flex;
