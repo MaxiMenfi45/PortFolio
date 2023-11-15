@@ -23,7 +23,7 @@ a{
     text-decoration: none;
 }
 #hr{
-    background-color: var(--color-primario);
+    background-color: var(--rojo);
     border: none;
     height: 50px;
 }
@@ -285,6 +285,9 @@ footer{
 
  @media  screen and (min-width:769px) and (max-width:1200px) {
 
+    #nav-bar {
+        overflow-y: hidden;
+    }
     #hr{
         height: 70px;
     }
@@ -323,7 +326,13 @@ footer{
 
 
  @media screen  and (min-width:350px) and  (max-width: 768px){
-
+        
+    #nav-bar {
+        overflow-y: hidden;
+    }
+        #nav-bar{
+            height: 50px;
+        }
         
         #nav-bar ul{
             justify-content: center;
