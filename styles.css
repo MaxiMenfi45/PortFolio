@@ -339,9 +339,24 @@ footer{
             font-size: 2rem;
             margin-bottom: 20px;
         }
+        #trabajar-juntos ul{
+            display: flex;
+            align-items:flex-start;
+            justify-content: center;
+            height: auto;
+            width: 70%;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0 auto;
+           
+
+        }
 
         #trabajar-juntos ul li{
-            font-size: 13px;
+            font-size: 19px;
+            padding: 2px;
+
+            
         }
 
 
@@ -349,13 +364,8 @@ footer{
  }
  @media screen  and (max-width: 750px){
     #nav-bar ul li {
-        font-size: 18px;
-        padding: 2px;
+        font-size: 17px;
     }
-    #trabajar-juntos ul li{
-        font-size: 10px;
-    }
-
 
  }
 
