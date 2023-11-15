@@ -278,7 +278,30 @@ footer{
     
  }
 
- @media screen  and (min-width:480px) and  (max-width: 768px){
+ @media  screen and (min-width:769px) and (max-width:1200px) {
+
+
+    #proyectos{
+        height: 920px;
+        grid-template-columns: repeat(2,400px);
+        grid-template-rows: 100px 300px 300px 30px;
+        grid-template-areas: 
+        "header header "
+        "pagina1 pagina2 "
+        "pagina3 .  "
+        "boton boton  "
+        ;
+    }
+
+    
+
+ }
+
+
+
+
+
+ @media screen  and (min-width:350px) and  (max-width: 768px){
 
         
         #nav-bar ul{
@@ -348,16 +371,16 @@ footer{
             align-items:flex-start;
             justify-content: center;
             height: auto;
-            width: 70%;
+            width: 85%;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
             margin: 0 auto;
            
 
         }
 
         #trabajar-juntos ul li{
-            font-size: 17px;
+            font-size: 18px;
             padding: 2px;
 
             
@@ -368,7 +391,7 @@ footer{
  }
  @media screen  and (max-width: 480px){
     #nav-bar ul li {
-        font-size: 15px;
+        font-size: 14px;
     }
 
  }
