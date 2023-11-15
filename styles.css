@@ -282,6 +282,7 @@ footer{
 
 
     #proyectos{
+
         height: 920px;
         grid-template-columns: repeat(2,400px);
         grid-template-rows: 100px 300px 300px 30px;
@@ -292,6 +293,18 @@ footer{
         "boton boton  "
         ;
     }
+    #proyectos  .izquierda{
+        
+        margin-left: 30px;
+
+
+    }
+    #proyectos  .derecha{
+        
+        margin-right: 30px;
+
+    }
+
 
     
 
