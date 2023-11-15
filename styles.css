@@ -284,9 +284,9 @@ footer{
 
         }
         #nav-bar ul li {
-            font-size: 18px;
+            font-size: 20px;
             padding: 2px;
-
+            
         }
 
 
@@ -344,6 +344,17 @@ footer{
             font-size: 13px;
         }
 
+
+
+ }
+ @media screen  and (max-width: 750px){
+    #nav-bar ul li {
+        font-size: 18px;
+        padding: 2px;
+    }
+    #trabajar-juntos ul li{
+        font-size: 12px;
+    }
 
 
  }
